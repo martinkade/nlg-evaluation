@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quality-criteria weight-sum="1.0">
+	
+	<head>
+		<item name="type" value="text-quality" />
+		<item name="name" value="fluency" />
+	</head>
+	
+	<eval-method
+		type="intrinsic"
+		exec="human-assessed"
+		weight=".5"
+		threshold=".5">
+		<catalog>
+			<rating numeric="1">unbrauchbar</rating>
+			<rating numeric="2">eher schlecht</rating>
+			<rating numeric="3">passabel</rating>
+			<rating numeric="4">gut</rating>
+			<rating numeric="5">sehr gut</rating>
+		</catalog>
+	</eval-method>
+	
+</quality-criteria>

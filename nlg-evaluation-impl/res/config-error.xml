@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quality-criteria weight-sum="1.0">
+	
+	<head>
+		<item name="type" value="text-quality" />
+		<item name="name" value="fluency" />
+	</head>
+
+	<eval-method
+		name="de.martin.nlg.evaluation.tasks.metrics.NIST-4"
+		type="intrinsic"
+		exec="automatic"
+		weight=".5"
+		threshold=".5">
+	</eval-method>
+	
+	<eval-method
+		type="intrinsic"
+		weight=".5"
+		threshold=".5">
+		<catalog>
+			<rating numeric="1">unbrauchbar</rating>
+			<rating numeric="2">eher schlecht</rating>
+			<rating numeric="3">passabel</rating>
+			<rating numeric="4">gut</rating>
+			<rating numeric="5">sehr gut</rating>
+		</catalog>
+	</eval-method>
+	
+</quality-criteria>
